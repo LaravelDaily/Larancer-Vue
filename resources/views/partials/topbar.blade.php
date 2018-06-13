@@ -19,9 +19,15 @@
             <span class="icon-bar"></span>
         </a>
 
-        
 
-        
+
+        <div class="top-menu">
+            <ul class="nav navbar-nav pull-right">
+                <li>
+                    <a href="https://vue.quickadminpanel.com" target="_blank">Powered by Vue QuickAdmin</a>
+                </li>
+            </ul>
+        </div>
 
     </nav>
 </header>

@@ -33,3 +33,16 @@
 <link rel="stylesheet" href="{{ url('adminlte/css/custom.css') }}">
 <link rel="stylesheet" href="{{ url('adminlte/css/skins/skin-blue.min.css') }}">
 <link rel="stylesheet" href="{{ mix('/client/css/app.css') }}">
+
+<style>
+    .qa-banner {
+        font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        background-color: #FF7C7B;
+        font-size: 16px;
+        text-align: center;
+        padding: 12px;
+    }
+    .qa-banner > a {
+        color: #1444CB;
+    }
+</style>
