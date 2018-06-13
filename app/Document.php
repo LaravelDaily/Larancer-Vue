@@ -23,7 +23,13 @@ class Document extends Model implements HasMedia
     protected $fillable = ['title', 'description', 'project_id'];
     protected $appends = ['file', 'file_link'];
     protected $with = ['media'];
-    
+
+    public static function boot()
+    {
+        parent::boot();
+
+        Document::observe(new \App\Observers\UserActionsObserver);
+    }
 
     public static function storeValidation($request)
     {

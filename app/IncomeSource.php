@@ -17,7 +17,13 @@ class IncomeSource extends Model
 
     
     protected $fillable = ['title', 'fee_percent'];
-    
+
+    public static function boot()
+    {
+        parent::boot();
+
+        IncomeSource::observe(new \App\Observers\UserActionsObserver);
+    }
 
     public static function storeValidation($request)
     {

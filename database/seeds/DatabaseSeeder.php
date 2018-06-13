@@ -16,7 +16,14 @@ class DatabaseSeeder extends Seeder
         $this->call(RoleSeed::class);
         $this->call(UserSeed::class);
         $this->call(RoleSeedPivot::class);
+        $this->call(CurrencySeed::class);
         $this->call(UserSeedPivot::class);
-
+        $this->call(ClientSeed::class);
+        $this->call(IncomeSourceSeed::class);
+        $this->call(NoteSeed::class);
+        $this->call(ProjectStatusSeed::class);
+        $this->call(ProjectSeed::class);
+        $this->call(TransactionTypeSeed::class);
+        $this->call(TransactionSeed::class);
     }
 }

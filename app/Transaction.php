@@ -24,7 +24,13 @@ class Transaction extends Model
 
     
     protected $fillable = ['title', 'description', 'amount', 'transaction_date', 'project_id', 'transaction_type_id', 'income_source_id', 'currency_id'];
-    
+
+    public static function boot()
+    {
+        parent::boot();
+
+        Transaction::observe(new \App\Observers\UserActionsObserver);
+    }
 
     public static function storeValidation($request)
     {

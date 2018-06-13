@@ -16,4 +16,7 @@ Route::group(['prefix' => '/v1', 'middleware' => ['auth:api'], 'namespace' => 'A
     Route::apiResource('permissions', 'PermissionsController');
     Route::apiResource('roles', 'RolesController');
     Route::apiResource('users', 'UsersController');
+
+    Route::get('reports', 'ReportsController@index')->name('reports.index');
+    Route::get('user-actions', 'UserActionsController@index')->name('user-actions.index');
 });

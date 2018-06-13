@@ -16,7 +16,13 @@ class ProjectStatus extends Model
 
     
     protected $fillable = ['title'];
-    
+
+    public static function boot()
+    {
+        parent::boot();
+
+        ProjectStatus::observe(new \App\Observers\UserActionsObserver);
+    }
 
     public static function storeValidation($request)
     {

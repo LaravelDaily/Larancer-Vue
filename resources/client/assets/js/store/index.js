@@ -29,6 +29,8 @@ import RolesIndex from './modules/Roles'
 import RolesSingle from './modules/Roles/single'
 import UsersIndex from './modules/Users'
 import UsersSingle from './modules/Users/single'
+import UserActionsIndex from './modules/UserActions/Index'
+import ReportsIndex from './modules/Reports/Index'
 
 Vue.use(Vuex)
 
@@ -65,6 +67,8 @@ export default new Vuex.Store({
         RolesSingle,
         UsersIndex,
         UsersSingle,
+        UserActionsIndex,
+        ReportsIndex
     },
     strict: debug,
 })

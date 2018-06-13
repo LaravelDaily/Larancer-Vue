@@ -54,6 +54,9 @@ import UsersIndex from '../components/cruds/Users/Index.vue'
 import UsersCreate from '../components/cruds/Users/Create.vue'
 import UsersShow from '../components/cruds/Users/Show.vue'
 import UsersEdit from '../components/cruds/Users/Edit.vue'
+import UserActionsIndex from '../components/cruds/UserActions/Index'
+import Dashboard from '../components/Dashboard'
+import ReportsIndex from '../components/cruds/Reports/Index'
 
 Vue.use(VueRouter)
 
@@ -111,6 +114,9 @@ const routes = [
     { path: '/users/create', component: UsersCreate, name: 'users.create' },
     { path: '/users/:id', component: UsersShow, name: 'users.show' },
     { path: '/users/:id/edit', component: UsersEdit, name: 'users.edit' },
+    { path: '/user-actions', component: UserActionsIndex, name: 'user_actions.index' },
+    { path: '/reports', component: ReportsIndex, name: 'reports.index' },
+    { path: '/home', component: Dashboard, name: 'dashboard' },
 ]
 
 export default new VueRouter({

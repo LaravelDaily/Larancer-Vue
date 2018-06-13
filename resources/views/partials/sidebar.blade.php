@@ -42,6 +42,12 @@
                     <span>@lang('quickadmin.transactions.title')</span>
                 </router-link>
             </li>
+            <li>
+                <router-link :to="{ name: 'reports.index' }">
+                    <i class="fa fa-bar-chart"></i>
+                    <span class="title">@lang('quickadmin.reports.title')</span>
+                </router-link>
+            </li>
             <li class="treeview" v-if="$can('setting_access')">
                 <a href="#">
                     <i class="fa fa-gears"></i>
@@ -111,6 +117,13 @@
                         </router-link>
                     </li>
                 </ul>
+            </li>
+
+            <li>
+                <router-link :to="{ name: 'user_actions.index' }">
+                    <i class="fa fa-users"></i>
+                    <span class="title">@lang('quickadmin.user-actions.title')</span>
+                </router-link>
             </li>
 
             <li>

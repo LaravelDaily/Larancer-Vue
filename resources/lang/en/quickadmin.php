@@ -1,21 +1,152 @@
 <?php
 
 return [
-		'user-management' => [		'title' => 'User management',		'fields' => [		],	],
-		'permissions' => [		'title' => 'Permissions',		'fields' => [			'title' => 'Title',		],	],
-		'roles' => [		'title' => 'Roles',		'fields' => [			'title' => 'Title',			'permission' => 'Permissions',		],	],
-		'users' => [		'title' => 'Users',		'fields' => [			'name' => 'Name',			'email' => 'Email',			'password' => 'Password',			'role' => 'Role',			'remember-token' => 'Remember token',		],	],
-		'settings' => [		'title' => 'Settings',		'fields' => [		],	],
-		'currencies' => [		'title' => 'Currencies',		'fields' => [			'title' => 'Title',			'code' => 'Code',			'main-currency' => 'Main currency',		],	],
-		'transaction-types' => [		'title' => 'Transaction types',		'fields' => [			'title' => 'Title',		],	],
-		'income-sources' => [		'title' => 'Income Sources',		'fields' => [			'title' => 'Title',			'fee-percent' => 'Fee percent',		],	],
-		'client-statuses' => [		'title' => 'Client Statuses',		'fields' => [			'title' => 'Title',		],	],
-		'project-statuses' => [		'title' => 'Project Statuses',		'fields' => [			'title' => 'Title',		],	],
-		'clients' => [		'title' => 'Clients',		'fields' => [			'first-name' => 'First name',			'last-name' => 'Last name',			'company-name' => 'Company name',			'email' => 'Email',			'phone' => 'Phone',			'website' => 'Website',			'skype' => 'Skype',			'country' => 'Country',			'client-status' => 'Client status',		],	],
-		'projects' => [		'title' => 'Projects',		'fields' => [			'title' => 'Title',			'client' => 'Client',			'description' => 'Description',			'start-date' => 'Start date',			'budget' => 'Budget',			'project-status' => 'Project status',		],	],
-		'notes' => [		'title' => 'Notes',		'fields' => [			'project' => 'Project',			'note-text' => 'Note text',		],	],
-		'documents' => [		'title' => 'Documents',		'fields' => [			'project' => 'Project',			'title' => 'Title',			'description' => 'Description',			'file' => 'File',		],	],
-		'transactions' => [		'title' => 'Transactions',		'fields' => [			'project' => 'Project',			'transaction-type' => 'Transaction type',			'income-source' => 'Income source',			'title' => 'Title',			'description' => 'Description',			'amount' => 'Amount',			'currency' => 'Currency',			'transaction-date' => 'Transaction date',		],	],
+    'user-actions' => [
+        'title' => 'User actions',
+        'fields' => [
+        ],
+    ],
+
+    'reports' => [
+        'title' => 'Reports',
+        'fields' => [
+        ],
+    ],
+	
+	'user-management' => [
+		'title' => 'User management',
+		'fields' => [
+		],
+	],
+	
+	'permissions' => [
+		'title' => 'Permissions',
+		'fields' => [
+			'title' => 'Title',
+		],
+	],
+	
+	'roles' => [
+		'title' => 'Roles',
+		'fields' => [
+			'title' => 'Title',
+			'permission' => 'Permissions',
+		],
+	],
+	
+	'users' => [
+		'title' => 'Users',
+		'fields' => [
+			'name' => 'Name',
+			'email' => 'Email',
+			'password' => 'Password',
+			'role' => 'Role',
+			'remember-token' => 'Remember token',
+		],
+	],
+	
+	'settings' => [
+		'title' => 'Settings',
+		'fields' => [
+		],
+	],
+	
+	'currencies' => [
+		'title' => 'Currencies',
+		'fields' => [
+			'title' => 'Title',
+			'code' => 'Code',
+			'main-currency' => 'Main currency',
+		],
+	],
+	
+	'transaction-types' => [
+		'title' => 'Transaction types',
+		'fields' => [
+			'title' => 'Title',
+		],
+	],
+	
+	'income-sources' => [
+		'title' => 'Income Sources',
+		'fields' => [
+			'title' => 'Title',
+			'fee-percent' => 'Fee percent',
+		],
+	],
+	
+	'client-statuses' => [
+		'title' => 'Client Statuses',
+		'fields' => [
+			'title' => 'Title',
+		],
+	],
+	
+	'project-statuses' => [
+		'title' => 'Project Statuses',
+		'fields' => [
+			'title' => 'Title',
+		],
+	],
+	
+	'clients' => [
+		'title' => 'Clients',
+		'fields' => [
+			'first-name' => 'First name',
+			'last-name' => 'Last name',
+			'company-name' => 'Company name',
+			'email' => 'Email',
+			'phone' => 'Phone',
+			'website' => 'Website',
+			'skype' => 'Skype',
+			'country' => 'Country',
+			'client-status' => 'Client status',
+		],
+	],
+	
+	'projects' => [
+		'title' => 'Projects',
+		'fields' => [
+			'title' => 'Title',
+			'client' => 'Client',
+			'description' => 'Description',
+			'start-date' => 'Start date',
+			'budget' => 'Budget',
+			'project-status' => 'Project status',
+		],
+	],
+	
+	'notes' => [
+		'title' => 'Notes',
+		'fields' => [
+			'project' => 'Project',
+			'note-text' => 'Note text',
+		],
+	],
+	
+	'documents' => [
+		'title' => 'Documents',
+		'fields' => [
+			'project' => 'Project',
+			'title' => 'Title',
+			'description' => 'Description',
+			'file' => 'File',
+		],
+	],
+	
+	'transactions' => [
+		'title' => 'Transactions',
+		'fields' => [
+			'project' => 'Project',
+			'transaction-type' => 'Transaction type',
+			'income-source' => 'Income source',
+			'title' => 'Title',
+			'description' => 'Description',
+			'amount' => 'Amount',
+			'currency' => 'Currency',
+			'transaction-date' => 'Transaction date',
+		],
+	],
 	'qa_create' => 'Create',
 	'qa_save' => 'Save',
 	'qa_edit' => 'Edit',

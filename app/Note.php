@@ -17,7 +17,13 @@ class Note extends Model
 
     
     protected $fillable = ['note_text', 'project_id'];
-    
+
+    public static function boot()
+    {
+        parent::boot();
+
+        Note::observe(new \App\Observers\UserActionsObserver);
+    }
 
     public static function storeValidation($request)
     {

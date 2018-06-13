@@ -18,7 +18,13 @@ class Currency extends Model
 
     
     protected $fillable = ['title', 'code', 'main_currency'];
-    
+
+    public static function boot()
+    {
+        parent::boot();
+
+        Currency::observe(new \App\Observers\UserActionsObserver);
+    }
 
     public static function storeValidation($request)
     {

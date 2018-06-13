@@ -24,7 +24,13 @@ class Client extends Model
 
     
     protected $fillable = ['first_name', 'last_name', 'company_name', 'email', 'phone', 'website', 'skype', 'country', 'client_status_id'];
-    
+
+    public static function boot()
+    {
+        parent::boot();
+
+        Client::observe(new \App\Observers\UserActionsObserver);
+    }
 
     public static function storeValidation($request)
     {
