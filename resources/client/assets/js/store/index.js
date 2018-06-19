@@ -29,7 +29,7 @@ import RolesIndex from './modules/Roles'
 import RolesSingle from './modules/Roles/single'
 import UsersIndex from './modules/Users'
 import UsersSingle from './modules/Users/single'
-import UserActionsIndex from './modules/UserActions/Index'
+import UserActionsIndex from './modules/UserActions'
 import ReportsIndex from './modules/Reports/Index'
 
 Vue.use(Vuex)
