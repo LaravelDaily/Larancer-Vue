@@ -4,7 +4,7 @@ It is a __Vue version__ of the project that we had done before in [Laravel-only 
 
 It is a demo project for demonstrating what can be generated with [Vue.js QuickAdminPanel](https://vue.quickadminpanel.com) tool.
 
-![Vue Laracner screenshot](http://webcoderpro.com/vue-larancer-demo.png)
+![Vue Laracner screenshot](https://laraveldaily.com/wp-content/uploads/2018/11/vue-larancer-demo.png)
 
 ## How to use
 
@@ -30,3 +30,4 @@ Basically, feel free to use and re-use any way you want.
 - Follow our [Twitter](https://twitter.com/dailylaravel) and [Blog](http://laraveldaily.com/blog)
 - Subscribe to our [newsletter with 20+ Laravel links every Thursday](http://laraveldaily.com/weekly-laravel-newsletter/)
 - Subscribe to our [YouTube channel Laravel Business](https://www.youtube.com/channel/UCTuplgOBi6tJIlesIboymGA)
+- Enroll in our [Laravel Online Courses](https://laraveldaily.teachable.com/)
